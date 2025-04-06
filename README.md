@@ -2,4 +2,4 @@
 
 역기획 포트폴리오입니다.
 
-주소 : https://yellowboxer1.netlify.app//
+주소 : zigzag-project.netlify.app
