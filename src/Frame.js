@@ -8,6 +8,9 @@ import Deskresearch from './component/Deskresearch';
 import Swot from './component/Swot';
 import Persona from './component/Persona';
 import Problem from './component/Problem';
+import JourneyMap from './component/JourneyMap';
+import UserFlowChart from './component/UserFlowChart';
+import DesignGuide from './component/DesignGuide';
 
 const Frame = () => {
   const sectionRef = useRef(null);
@@ -106,7 +109,10 @@ const Frame = () => {
       <Spacer3 />
       <Swot />
       <Persona />
+      <JourneyMap/>
       <Problem />
+      <UserFlowChart/>
+      <DesignGuide />
     </div>
   );
 };
