@@ -8,10 +8,10 @@
 }
 .group10000039271 {
     position: absolute;
-    top: 2992px;
-    left: 434px;
-    width: 384px;
-    height: 3339px;
+    top: 2957px;
+    left: 395px;
+    width: 503px;
+    height: 3454px;
     object-fit: cover;
 }
 .image324Icon {
@@ -53,7 +53,7 @@
 .onboardingPage1 {
     position: absolute;
     top: 1814px;
-    left: 153px;
+    left: 148px;
     width: 758px;
     height: 100px;
     object-fit: cover;
@@ -74,12 +74,21 @@
     width: 1920px;
     height: 1079px;
 }
+.onboardingVideo {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    border-radius: var(--br-41xl);
+    width: 380px;
+    height: 824px;
+    object-fit: cover;
+}
 .image48Icon {
     position: absolute;
     top: 13px;
     left: 18px;
     border-radius: var(--br-41xl);
-    width: 378px;
+    width: 380px;
     height: 824px;
     object-fit: cover;
 }
@@ -120,7 +129,6 @@
     top: 13px;
     left: 18px;
     border-radius: var(--br-41xl);
-    background: linear-gradient(-5.99deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.03));
     width: 378px;
     height: 824px;
 }
@@ -190,10 +198,10 @@
 }
 .group10000039281 {
     position: absolute;
-    top: 3513px;
-    left: 1118px;
-    width: 384px;
-    height: 2505px;
+    top: 3477px;
+    left: 1079px;
+    width: 503px;
+    height: 2621px;
     object-fit: cover;
 }
 .group10000039211 {

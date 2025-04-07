@@ -13,6 +13,9 @@ import UserFlowChart from './component/UserFlowChart';
 import DesignGuide from './component/DesignGuide';
 import OnboardingPage from './component/OnboardingPage';
 import Spacer4 from './component/Spacer4';
+import Home from './component/Home';
+import Store from './component/Store';
+import Discover from './component/Discover';
 
 const Frame = () => {
   const sectionRef = useRef(null);
@@ -117,6 +120,9 @@ const Frame = () => {
       <DesignGuide />
       <Spacer4 />
       <OnboardingPage />
+      <Home />
+      <Store />
+      <Discover />
     </div>
   );
 };

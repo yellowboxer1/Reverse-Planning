@@ -5,10 +5,11 @@ import g3921 from '../assets/image/Group 1000003921@4x.png';
 import i324 from '../assets/image/image 324.png';
 import OnboardingPage1 from '../assets/image/Onboarding Page@3x.png';
 import i321 from '../assets/image/image 321@3x.png';
-import image48 from '../assets/image/image 48@3x.png';
 import i49 from '../assets/image/image 49@3x.png';
 import i336 from '../assets/image/image 336@3x.png';
 import i01 from '../assets/image/img 01@3x.png';
+import video from '../assets/video/onboarding.mp4';
+import all from '../assets/video/all.mp4';
 
 
 const OnboardingPage = () => {
@@ -29,7 +30,7 @@ const OnboardingPage = () => {
 	<img className={styles.image321Icon} alt="" src={i321} />
 	<div className={styles.image323} />
 	<div className={styles.image48Parent}>
-	<img className={styles.image48Icon} alt="" src={image48} />
+	<video className={styles.image48Icon} alt="" src={all} autoPlay muted loop playsInline />
 	<div className={styles.image50} />
 	<img className={styles.icon} alt="" src={i49} />
 	</div>
@@ -40,6 +41,7 @@ const OnboardingPage = () => {
 	</div>
 	<div className={styles.imageParent}>
 	<img className={styles.image48Icon} alt="" src={i01} />
+	<video className={styles.onboardingVideo} src={video} autoPlay muted loop playsInline />
 	<img className={styles.icon} alt="" src={i49} />
 	<div className={styles.image502} />
 	</div>
