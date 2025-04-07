@@ -1,41 +1,41 @@
-.image49Icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 425px;
-    height: 849px;
-    object-fit: cover;
-}
 .image48Icon {
     position: absolute;
-    top: 16px;
-    left: 21px;
-    border-radius: 41px;
-    width: 384px;
-    height: 816px;
+    top: 13px;
+    left: 18px;
+    border-radius: var(--br-41xl);
+    width: 378px;
+    height: 824px;
     object-fit: cover;
 }
 .image50 {
     position: absolute;
-    top: 16px;
-    left: 21px;
-    border-radius: 41px;
+    top: 13px;
+    left: 18px;
+    border-radius: var(--br-41xl);
     background: linear-gradient(-5.99deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-    width: 384px;
-    height: 816px;
+    width: 378px;
+    height: 824px;
 }
-.image49Parent {
+.icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 414px;
+    height: 849px;
+    object-fit: cover;
+}
+.image48Parent {
     position: absolute;
     top: 129px;
-    left: 1389px;
-    width: 425px;
+    left: 1395px;
+    width: 414px;
     height: 849px;
 }
-.image49Group {
+.imageParent {
     position: absolute;
     top: 129px;
     left: 886px;
-    width: 425px;
+    width: 414px;
     height: 849px;
 }
 .child {
@@ -59,7 +59,7 @@
     top: 251px;
     left: 106px;
     letter-spacing: -0.03em;
-    font-family: 'Noto Sans KR';
+    font-family: var(--font-noto-sans-kr);
     font-weight: 600;
 }
 .strategy {
@@ -83,10 +83,10 @@
     position: absolute;
     top: 323px;
     left: 106px;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     letter-spacing: -0.03em;
     line-height: 34px;
-    font-family: 'Noto Sans KR';
+    font-family: var(--font-noto-sans-kr);
     display: flex;
     align-items: center;
     font-weight: 350;
@@ -96,10 +96,10 @@
     position: absolute;
     top: 849px;
     left: 106px;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     letter-spacing: -0.03em;
     line-height: 34px;
-    font-family: 'Noto Sans KR';
+    font-family: var(--font-noto-sans-kr);
     font-weight: 350;
 }
 .item {
@@ -143,7 +143,7 @@
     position: absolute;
     top: 576px;
     left: 141px;
-    font-size: 20px;
+    font-size: var(--font-size-xl);
     letter-spacing: -0.03em;
     font-weight: 600;
 }
@@ -151,7 +151,7 @@
     position: absolute;
     top: 576px;
     left: 273px;
-    font-size: 20px;
+    font-size: var(--font-size-xl);
     letter-spacing: -0.03em;
     font-weight: 600;
 }
@@ -159,7 +159,7 @@
     position: absolute;
     top: 576px;
     left: 497px;
-    font-size: 20px;
+    font-size: var(--font-size-xl);
     letter-spacing: -0.03em;
     font-weight: 600;
 }
@@ -170,8 +170,8 @@
     height: 1080px;
     overflow: hidden;
     text-align: left;
-    font-size: 29px;
-    color: #fff;
-    font-family: 'Noto Sans';
+    font-size: var(--font-size-10xl);
+    color: var(--color-white);
+    font-family: var(--font-noto-sans);
 }
 

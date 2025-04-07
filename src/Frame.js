@@ -11,6 +11,8 @@ import Problem from './component/Problem';
 import JourneyMap from './component/JourneyMap';
 import UserFlowChart from './component/UserFlowChart';
 import DesignGuide from './component/DesignGuide';
+import OnboardingPage from './component/OnboardingPage';
+import Spacer4 from './component/Spacer4';
 
 const Frame = () => {
   const sectionRef = useRef(null);
@@ -113,6 +115,8 @@ const Frame = () => {
       <Problem />
       <UserFlowChart/>
       <DesignGuide />
+      <Spacer4 />
+      <OnboardingPage />
     </div>
   );
 };

@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;350;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@0,100..900;1,100..900&display=swap');
+
 body {
   	margin: 0; line-height: normal;
 }
@@ -12,6 +14,7 @@ body {
   	--font-noto-sans-kr: 'Noto Sans KR';
   	--font-inter: Inter;
   	--font-bacasime-antique: 'Bacasime Antique';
+	--font-noto-sans1: 'Noto Sans Display';
   	
   	/* font sizes */
   	--font-size-mini: 15px;
@@ -51,7 +54,7 @@ body {
   	--color-plum-100: #ea95c1;
   	--color-silver: #b6b6b6;
   	--color-violet: #f56ee4;
-  	--color-white: #ddd;
+  	--color-white: #eee;
   	
   	/* Paddings */
   	--padding-2xl: 21px;
