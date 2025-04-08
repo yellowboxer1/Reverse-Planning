@@ -47,6 +47,8 @@ body {
   	--color-gray-500: #101010;
   	--color-gray-600: #070503;
   	--color-gray-700: rgba(22, 22, 22, 0.8);
+	--color-black-100: #141414;
+	--color-black-200: #1d1d1d;
   	--color-hotpink-100: #ff5bb1;
   	--color-lightgray: #cacaca;
   	--color-mistyrose: #ffe7e6;
@@ -55,6 +57,7 @@ body {
   	--color-silver: #b6b6b6;
   	--color-violet: #f56ee4;
   	--color-white: #eee;
+	--color-dimgray: #525252;
   	
   	/* Paddings */
   	--padding-2xl: 21px;

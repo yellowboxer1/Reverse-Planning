@@ -138,22 +138,22 @@
 .discoverInner {
     position: absolute;
     top: 2220px;
-    left: 258.5px;
-    width: 183.5px;
-    height: 134px;
+    left: 234px;
+    width: 208px;
+    height: 139px;
     object-fit: contain;
 }
 .vectorIcon {
     position: absolute;
-    top: 3790px;
-    left: 434px;
+    top: 3798px;
+    left: 433px;
     width: 191px;
     height: 212px;
     object-fit: contain;
 }
 .discoverChild1 {
     position: absolute;
-    top: 4994px;
+    top: 4998px;
     left: 854px;
     width: 243px;
     height: auto;
@@ -162,21 +162,21 @@
 }
 .groupIcon {
     position: absolute;
-    top: 2345px;
-    left: 249px;
+    top: 2350px;
+    left: 228px;
     width: 17px;
     height: 17px;
 }
 .discoverChild2 {
     position: absolute;
-    top: 3993px;
+    top: 3998px;
     left: 425px;
     width: 17px;
     height: 17px;
 }
 .discoverChild3 {
     position: absolute;
-    top: 4985px;
+    top: 4991px;
     left: 1089px;
     width: 17px;
     height: 17px;
@@ -187,7 +187,7 @@
 .epickMain {
     position: absolute;
     top: 2336px;
-    left: 65px;
+    left: 49px;
     font-size: var(--font-size-11xl);
     text-transform: uppercase;
 }
@@ -198,10 +198,11 @@
 .div2 {
     position: absolute;
     top: 2389px;
-    left: 65px;
-    line-height: var(--font-size-11xl);
+    left: 49px;
+    font-size: var(--font-size-base);
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 500;
+    color: var(--color-dimgray);
 }
 .talkLounge {
     position: absolute;
@@ -214,26 +215,30 @@
     position: absolute;
     top: 4037px;
     left: 453px;
-    line-height: var(--font-size-11xl);
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 500;
+    color: var(--color-dimgray);
 }
+.size {
+    font-weight: 500;
+    font-family: var(--font-noto-sans-kr);
+}
+
 .sizeRecommendation {
     position: absolute;
     top: 4965px;
     left: 1121px;
     font-size: 45px;
     text-transform: uppercase;
-    font-weight: 500;
 }
 .aiContainer {
     position: absolute;
     top: 5058px;
     left: 1121px;
-    line-height: var(--font-size-11xl);
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 500;
-}
+    color: var(--color-dimgray);
+    }
 .imageContainer {
     position: absolute;
     top: 4348px;
@@ -248,7 +253,7 @@
     height: 5315px;
     overflow: hidden;
     text-align: left;
-    font-size: var(--font-size-mini);
+    font-size: var(--font-size-base);
     color: var(	--color-black-100);
     font-family: var(--font-noto-sans-kr);
 }

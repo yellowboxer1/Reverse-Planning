@@ -63,9 +63,12 @@ const Discover = () => {
         				<p className={styles.p}>취향이 통하는 사람들과 자유롭게 소통하는 커뮤니티, 톡 라운지.</p>
         				<p className={styles.p}> 관심 있는 주제로 이야기 나누며 트렌드를 함께 만들어보세요.</p>
       			</div>
-      			<div className={styles.sizeRecommendation}>
-        				<p className={styles.p}>Size recommendation</p>
-      			</div>
+				  <div className={styles.sizeRecommendation}>
+					<p className={styles.p}>
+						<span className={styles.size}>{`Size `}</span>
+						<span>recommendation</span>
+					</p>
+				</div>
       			<div className={styles.aiContainer}>
         				<p className={styles.p}>리뷰 찾아 다니느라 힘드셨죠?</p>
           					<p className={styles.p}> AI 분석 기반 추천으로, 나에게 꼭 맞는 사이즈와</p>

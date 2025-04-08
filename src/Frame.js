@@ -16,6 +16,7 @@ import Spacer4 from './component/Spacer4';
 import Home from './component/Home';
 import Store from './component/Store';
 import Discover from './component/Discover';
+import Closet from './component/Closet';
 
 const Frame = () => {
   const sectionRef = useRef(null);
@@ -123,6 +124,7 @@ const Frame = () => {
       <Home />
       <Store />
       <Discover />
+      <Closet />
     </div>
   );
 };

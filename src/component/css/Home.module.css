@@ -8,15 +8,15 @@
 }
 .homeItem {
     position: absolute;
-    top: 2613px;
+    top: 2616px;
     left: 550px;
     max-height: 100%;
     width: 190.5px;
 }
 .homeInner {
     position: absolute;
-    top: 2604.5px;
-    left: 731.5px;
+    top: 2609px;
+    left: 731px;
     width: 17px;
     height: 17px;
 }
@@ -81,9 +81,9 @@
 }
 .vectorIcon {
     position: absolute;
-    top: 1278.5px;
-    left: 1163.5px;
-    width: 173.5px;
+    top: 1283px;
+    left: 1164px;
+    width: 174px;
     height: 171px;
 }
 .style {
@@ -102,10 +102,10 @@
     position: absolute;
     top: 1485px;
     left: 1370px;
-    font-size: var(--font-size-mini);
-    line-height: var(--font-size-11xl);
+    font-size: var(--font-size-base);
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 500;
+    color: var(--color-dimgray);
 }
 .beautyMain {
     position: absolute;
@@ -117,14 +117,14 @@
     position: absolute;
     top: 2648px;
     left: 768px;
-    font-size: var(--font-size-mini);
-    line-height: var(--font-size-11xl);
+    font-size: var(--font-size-base);
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 500;
+    color: var(--color-dimgray);
 }
 .groupIcon {
     position: absolute;
-    top: 1441px;
+    top: 1445px;
     left: 1328px;
     width: 17px;
     height: 17px;
