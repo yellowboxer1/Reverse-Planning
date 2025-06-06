@@ -80,7 +80,7 @@ const Closet = () => {
     <p className={styles.p}>ZIGZAG-RE PLANNIG PROJECT</p>
     </div>
     <div className={styles.gunhoDaeun202504}>
-    <p className={styles.p}>GUNHO, DAEUN</p>
+    <p className={styles.p}>GUNHO PARK</p>
     <p className={styles.p}>2025.04</p>
     </div>
     </div>);
