@@ -1,0 +1,28 @@
+.pageScope {
+  background: #070503;
+  color: #eee;
+  isolation: isolate;
+}
+
+.horizontalTrigger {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.horizontalContent {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.loading {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-noto-sans, 'Noto Sans', sans-serif);
+  color: rgba(255, 255, 255, 0.75);
+}
