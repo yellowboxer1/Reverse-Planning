@@ -25,7 +25,7 @@ import wconcept1 from '../assets/image/icon/w@3x.png';
 
 
 
-const Deskresearch = () => {
+const Deskresearch = ({ vector22 = 'Vector 22.svg' }) => {
   return (
     <>
       {/* 첫 번째 페이지 */}
@@ -108,7 +108,7 @@ const Deskresearch = () => {
           </b>
           <div className={styles.inner} />
           <b className={styles.b6}>왜 지그재그를 사용하나요?</b>
-          <img className={styles.vectorIcon} alt="" src="Vector 22.svg" />
+          <img className={styles.vectorIcon} alt="" src={vector22} />
         </div>
       </div>
       
