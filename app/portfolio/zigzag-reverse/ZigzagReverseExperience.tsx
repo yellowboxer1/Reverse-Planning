@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
+import './zigzag-reverse.tokens.css';
 import styles from './zigzag-reverse.module.css';
 import { withBasePath } from './lib/asset';
 
@@ -28,8 +29,6 @@ const Deskresearch = dynamic(() => import('./components/Deskresearch'), {
   loading: () => <div className={styles.loading}>Loading research section...</div>,
 });
 
-const DESIGN_WIDTH = 1920;
-
 export default function ZigzagReverseExperience() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
@@ -37,11 +36,7 @@ export default function ZigzagReverseExperience() {
 
   const isSmallViewport = vw < 1200;
   const isMobileViewport = vw < 768;
-
-  const scale = useMemo(() => {
-    if (vw >= DESIGN_WIDTH) return 1;
-    return Math.max(0.42, Math.min(1, vw / DESIGN_WIDTH));
-  }, [vw]);
+  const shouldEnableHorizontalMotion = vw >= 1918 && vw <= 1920;
 
   useEffect(() => {
     const onResize = () => setVw(window.innerWidth);
@@ -54,7 +49,7 @@ export default function ZigzagReverseExperience() {
     let mounted = true;
 
     const initGSAP = async () => {
-      if (isSmallViewport) return;
+      if (isSmallViewport || !shouldEnableHorizontalMotion) return;
 
       const { gsap } = await import('gsap');
       const { ScrollTrigger } = await import('gsap/ScrollTrigger');
@@ -99,52 +94,74 @@ export default function ZigzagReverseExperience() {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       });
     };
-  }, [isSmallViewport]);
+  }, [isSmallViewport, shouldEnableHorizontalMotion]);
 
   return (
     <article
       className={styles.pageScope}
       data-project="zigzag-reverse"
-      style={{
-        ['--zigzag-scale' as string]: String(scale),
-      }}
     >
-      <div className={isSmallViewport ? styles.scaledCanvas : undefined}>
-        <Main />
-        <Spacer />
-        <Overview />
-        <Spacer2 />
-
-        <section
-          ref={triggerRef}
-          className={`${styles.horizontalTrigger} ${isSmallViewport ? styles.horizontalTriggerNative : ''}`}
-        >
-          <div
-            ref={sectionRef}
-            className={`${styles.horizontalContent} ${isSmallViewport ? styles.horizontalContentNative : ''}`}
-          >
+      {isSmallViewport ? (
+        <div className={styles.responsiveGrid}>
+          <div className={styles.gridItem}><Main /></div>
+          <div className={styles.gridItem}><Spacer /></div>
+          <div className={styles.gridItem}><Overview /></div>
+          <div className={styles.gridItem}><Spacer2 /></div>
+          <div className={styles.gridItem}>
             <Deskresearch vector22={withBasePath('/portfolio/zigzag-reverse/assets/image/Vector 22.svg')} />
           </div>
-        </section>
+          <div className={styles.gridItem}><Spacer3 /></div>
+          <div className={styles.gridItem}><Swot /></div>
+          <div className={styles.gridItem}><Persona /></div>
+          <div className={styles.gridItem}><JourneyMap /></div>
+          <div className={styles.gridItem}><Problem /></div>
+          <div className={styles.gridItem}><UserFlowChart /></div>
+          <div className={styles.gridItem}><DesignGuide /></div>
+          <div className={styles.gridItem}><Spacer4 /></div>
+          <div className={styles.gridItem}><OnboardingPage /></div>
+          <div className={styles.gridItem}><Home /></div>
+          <div className={styles.gridItem}><Store /></div>
+          <div className={styles.gridItem}><Discover /></div>
+          <div className={styles.gridItem}><Closet /></div>
+        </div>
+      ) : (
+        <div>
+          <Main />
+          <Spacer />
+          <Overview />
+          <Spacer2 />
 
-        <Spacer3 />
-        <Swot />
-        <Persona />
-        <JourneyMap />
-        <Problem />
-        <UserFlowChart />
-        <DesignGuide />
-        <Spacer4 />
-        <OnboardingPage />
-        <Home />
-        <Store />
-        <Discover />
-        <Closet />
-      </div>
+          <section
+            ref={shouldEnableHorizontalMotion ? triggerRef : undefined}
+            className={shouldEnableHorizontalMotion ? styles.horizontalTrigger : styles.horizontalTriggerStatic}
+          >
+            <div
+              ref={shouldEnableHorizontalMotion ? sectionRef : undefined}
+              className={shouldEnableHorizontalMotion ? styles.horizontalContent : styles.horizontalContentStatic}
+            >
+              <Deskresearch vector22={withBasePath('/portfolio/zigzag-reverse/assets/image/Vector 22.svg')} />
+            </div>
+          </section>
+
+          <Spacer3 />
+          <Swot />
+          <Persona />
+          <JourneyMap />
+          <Problem />
+          <UserFlowChart />
+          <DesignGuide />
+          <Spacer4 />
+          <OnboardingPage />
+          <Home />
+          <Store />
+          <Discover />
+          <Closet />
+        </div>
+      )}
 
       {isMobileViewport ? (
         <p className={styles.mobileHint}>
-          Mobile mode uses scaled rendering to preserve the original 1920px design with minimal UX break.
+          Mobile mode uses a grid layout with per-section horizontal scrolling to preserve high-fidelity visuals.
         </p>
       ) : null}
     </article>

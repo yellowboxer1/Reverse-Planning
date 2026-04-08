@@ -13,6 +13,21 @@
   transform-origin: top center;
 }
 
+.responsiveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gridItem {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 1px solid rgba(238, 238, 238, 0.12);
+  border-radius: 16px;
+  background: #070503;
+}
+
 .horizontalTrigger {
   overflow: hidden;
   position: relative;
@@ -26,6 +41,16 @@
   width: auto;
   height: 100%;
   display: flex;
+}
+
+.horizontalTriggerStatic {
+  overflow: hidden;
+  width: 100%;
+}
+
+.horizontalContentStatic {
+  position: relative;
+  width: 100%;
 }
 
 .horizontalTriggerNative {

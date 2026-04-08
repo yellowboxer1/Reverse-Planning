@@ -1,3 +1,10 @@
 'use client';
 
-export { default } from '../../../../src/component/Spacer3';
+import styles from './styles/Spacer3.module.css';
+
+const Spacer3 = () => {
+  	return (
+    		<div className={styles.spacer} />);
+};
+
+export default Spacer3;
