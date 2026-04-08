@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
+import './zigzag-reverse.tokens.css';
 import styles from './zigzag-reverse.module.css';
 import { withBasePath } from './lib/asset';
 

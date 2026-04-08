@@ -2,13 +2,14 @@
   Optional token scope to avoid leaking legacy :root values globally.
   Import this in ZigzagReverseExperience.tsx only if you move styles out of src/index.css.
 */
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 [data-project='zigzag-reverse'] {
-  --font-noto-sans: 'Noto Sans';
-  --font-noto-sans-kr: 'Noto Sans KR';
-  --font-inter: Inter;
-  --font-bacasime-antique: 'Bacasime Antique';
-  --font-noto-sans1: 'Noto Sans Display';
+  --font-noto-sans: 'Noto Sans', sans-serif;
+  --font-noto-sans-kr: 'Noto Sans KR', 'Noto Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-bacasime-antique: 'Bacasime Antique', serif;
+  --font-noto-sans1: 'Noto Sans', sans-serif;
 
   --color-gray-600: #070503;
   --color-white: #eee;
