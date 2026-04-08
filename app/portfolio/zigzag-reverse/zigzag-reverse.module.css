@@ -21,7 +21,7 @@
 }
 
 .gridItem {
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   border: 1px solid rgba(238, 238, 238, 0.12);
   border-radius: 16px;
@@ -41,6 +41,16 @@
   width: auto;
   height: 100%;
   display: flex;
+}
+
+.horizontalTriggerStatic {
+  overflow: hidden;
+  width: 100%;
+}
+
+.horizontalContentStatic {
+  position: relative;
+  width: 100%;
 }
 
 .horizontalTriggerNative {

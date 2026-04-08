@@ -36,6 +36,7 @@ export default function ZigzagReverseExperience() {
 
   const isSmallViewport = vw < 1200;
   const isMobileViewport = vw < 768;
+  const shouldEnableHorizontalMotion = vw >= 1918 && vw <= 1920;
 
   useEffect(() => {
     const onResize = () => setVw(window.innerWidth);
@@ -48,7 +49,7 @@ export default function ZigzagReverseExperience() {
     let mounted = true;
 
     const initGSAP = async () => {
-      if (isSmallViewport) return;
+      if (isSmallViewport || !shouldEnableHorizontalMotion) return;
 
       const { gsap } = await import('gsap');
       const { ScrollTrigger } = await import('gsap/ScrollTrigger');
@@ -93,7 +94,7 @@ export default function ZigzagReverseExperience() {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       });
     };
-  }, [isSmallViewport]);
+  }, [isSmallViewport, shouldEnableHorizontalMotion]);
 
   return (
     <article
@@ -130,8 +131,14 @@ export default function ZigzagReverseExperience() {
           <Overview />
           <Spacer2 />
 
-          <section ref={triggerRef} className={styles.horizontalTrigger}>
-            <div ref={sectionRef} className={styles.horizontalContent}>
+          <section
+            ref={shouldEnableHorizontalMotion ? triggerRef : undefined}
+            className={shouldEnableHorizontalMotion ? styles.horizontalTrigger : styles.horizontalTriggerStatic}
+          >
+            <div
+              ref={shouldEnableHorizontalMotion ? sectionRef : undefined}
+              className={shouldEnableHorizontalMotion ? styles.horizontalContent : styles.horizontalContentStatic}
+            >
               <Deskresearch vector22={withBasePath('/portfolio/zigzag-reverse/assets/image/Vector 22.svg')} />
             </div>
           </section>
